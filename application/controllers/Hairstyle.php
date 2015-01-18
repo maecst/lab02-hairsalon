@@ -37,14 +37,16 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Hairstyle extends CI_Controller {
+class Hairstyle extends Application {
 
 	/**
 	 * Index Page for this controller.
 	 */
 	public function index()
 	{
-		$this->load->view('hairstyle');
+//		$this->load->view('hairstyle');
+                $this->data['pagebody'] = 'hairstyle';
+                $this->render();
 	}
 }
 
