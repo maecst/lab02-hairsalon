@@ -11,5 +11,5 @@ Converted to be a view fragment template:
 ?>
 
 <a href="#">
-    <img src="./images/{filename} alt="{alt}">
+    <img src="../images/{filename}" alt="{alt}">
 </a>
