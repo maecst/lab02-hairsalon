@@ -55,9 +55,10 @@ class Hairstyle extends Application {
         // prime the table class
             $this->load->library('table');
             $parms = array(
-                'table_open' => '<table class = "gallery">',
-                'cell_start' => '<td class = "oneimage">',
-                'cell_alt_start' => '<td class = "oneimage">'
+                'cell_start' => '<li>',
+                'cell_end' => '</li>',
+                'cell_alt_start' => '<li>',
+                'cell_alt_end' => '</li>'
             );
             
             $this->table->set_template($parms);
@@ -66,9 +67,9 @@ class Hairstyle extends Application {
             $rows = $this->table->make_columns($cells, 4);
             $this->data['thetable'] = $this->table->generate($rows);
             
-//		$this->load->view('hairstyle');
-                $this->data['pagebody'] = 'hairstyle';
-                $this->render();
+//          $this->load->view('hairstyle');
+            $this->data['pagebody'] = 'hairstyle';
+            $this->render();
 	}
 }
 
