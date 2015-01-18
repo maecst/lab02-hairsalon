@@ -1,5 +1,8 @@
 <h3>hairstyles</h3>
 <ul>
+    {thetable}
+<!--
+
         <li>
                 <a href="#"><img src="images/hairstyle1.jpg" alt=""></a>
         </li>
@@ -48,6 +51,8 @@
         <li>
                 <a href="#"><img src="images/hairstyle16.jpg" alt=""></a>
         </li>
+
+-->
 </ul>
 <a href="#" class="more">show more</a>
 	
